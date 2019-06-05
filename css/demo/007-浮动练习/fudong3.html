@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动练习1</title>
+    <style>
+        /**
+            第一步，清除浏览器自带样式
+         */
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+
+        .header{
+            width: 980px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .header .logo{
+            width: 250px;
+            height: 100px;
+            background-color: #ffc2d0;
+            float: left;
+        }
+
+        .header .language{
+            width: 150px;
+            height: 50px;
+            background-color: #8ed4ee;
+            float: right;
+        }
+
+        .header .nav{
+            width: 650px;
+            height: 50px;
+            background-color: #7f147d;
+            float: right;
+        }
+
+        .content{
+            width: 980px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .content .contentLeft{
+            width: 320px;
+            height: 400px;
+            background-color: #fcef00;
+            float: left;
+        }
+
+        .content .contentRight{
+            width: 650px;
+            height: 400px;
+            float: right;
+        }
+
+        .content .contentRight .cRTop{
+            width: 650px;
+            height: 350px;
+        }
+
+        .content .contentRight .cRTop .cRTLeft{
+            width: 400px;
+            height: 350px;
+            float: left;
+        }
+
+        .content .contentRight .cRTop .cRTLeft .cRTLtop{
+            width: 400px;
+            height: 200px;
+            background-color: #ff2298;
+        }
+
+        .content .contentRight .cRTop .cRTLeft .cRTLbottom{
+            width: 400px;
+            height: 140px;
+            background-color: #05bdff;
+            margin-top: 10px;
+        }
+
+        .content .contentRight .cRTop .cRTRight{
+            width: 240px;
+            height: 350px;
+            background-color: #9cce34;
+            float: right;
+        }
+
+        .content .contentRight .cRBottom{
+            margin-top: 10px;
+            width: 650px;
+            height: 40px;
+            background-color: #ba860e;
+        }
+
+        .footer{
+            width: 980px;
+            height: 40px;
+            background-color: #ff5933;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo"></div>
+    <div class="language"></div>
+    <div class="nav"></div>
+</div>
+<div class="content">
+    <div class="contentLeft"></div>
+    <div class="contentRight">
+        <div class="cRTop">
+            <div class="cRTLeft">
+                <div class="cRTLtop"></div>
+                <div class="cRTLbottom"></div>
+            </div>
+            <div class="cRTRight"></div>
+        </div>
+        <div class="cRBottom"></div>
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
