@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style>
+
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+
+
+        .p1{
+            display: inline;
+            background-color: red;
+            float: left;
+        }
+        
+        .p2{
+            display: inline;
+            background-color: blue;
+            float: left;
+        }
+
+        .box1::after{
+            content: '';
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        .box1{
+            /* 使IE6兼容伪元素选择器 */
+            *zoom:1;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <p class="p1">文字一</p>
+    <p class="p1">文字一</p>
+    <p class="p1">文字一</p>
+</div>
+
+<div class="box2">
+    <p class="p2">文字二</p>
+    <p class="p2">文字二</p>
+    <p class="p2">文字二</p>
+</div>
+</body>
+</html>
