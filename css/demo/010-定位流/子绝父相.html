@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 800px;
+            height: 50px;
+            list-style: none;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        
+        ul li{
+            float: left;
+            width: 100px;
+            line-height: 50px;
+            background-color: #CCC;
+            line-height: 50px;
+            text-align: center;
+            top: 0px;
+            left: 0px;
+        }
+
+        ul li:nth-of-type(4){
+            background-color: yellowgreen;
+            position: relative;
+        }
+
+        ul li img{
+            /*
+                1.相对定位弊端：不脱离标准流，会继续在标准流中占用一份空间，不利用布局
+                2.绝对定位弊端：默认情况下决定定位的元素会以body作为参考点，所以会随着浏览器的宽度和高度变化而变化
+
+                子绝父相
+             */
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -12px;
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <li>秒杀</li>
+            <li>优惠券</li>
+            <li>PLUS会员</li>
+            <li>闪购
+                <img src="img/hot.png" alt="">
+            </li>
+            <li>拍卖</li>
+            <li>京东时尚</li>
+            <li>京东超市</li>
+            <li>京东生鲜</li>
+        </ul>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 800px;
+            height: 60px;
+            list-style: none;
+            margin: 100px auto;
+        }
+
+        ul li{
+            width: 100px;
+            height: 60px;
+            float: left;
+            background-color: pink;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        /**
+            1. a标签的的伪类选择最好写在标签的后面
+            2. 和a标签盒子相关的属性都写在标签选择器中 显示模式\宽高\margin\padding
+            3. a标签文字背景相关的都写在伪类选择器中
+        */
+
+        ul li a{
+            width: 100px;
+            height: 60px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        ul li a:link{
+            color: white;
+        }
+        
+        ul li a:hover{
+            color: red;
+            background-color: #ccc;
+        }
+        
+        ul li a:active{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#1">我是</a></li>
+    <li><a href="#2">我是</a></li>
+    <li><a href="#3">我是</a></li>
+    <li><a href="#4">我是</a></li>
+    <li><a href="#5">我是</a></li>
+    <li><a href="#6">我是</a></li>
+    <li><a href="#7">我是</a></li>
+    <li><a href="#8">我是</a></li>
+</ul>
+</body>
+</html>
