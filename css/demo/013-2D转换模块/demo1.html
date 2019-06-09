@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 50px auto;
+        }
+
+        ul li{
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            margin: 50px auto;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        ul li:nth-child(2){
+            /* 2D转换模块会修改坐标系 */
+            transform: rotate(45deg);
+        }
+
+        /* 第一个参数水平，二垂直 */
+
+        ul li:nth-child(3){
+            transform: translate(-100px,-50px)
+        }
+
+        ul li:nth-child(4){
+            transform: scale(1.5, 1);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>正常</li>
+    <li>旋转</li>
+    <li>平移</li>
+    <li>缩放</li>
+</ul>
+</body>
+</html>

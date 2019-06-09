@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 800px;
+            height: 600px;
+            margin: 100px auto;
+            /* 透视属性 此属性一定要添加到需呈现近大远小效果元素的父元素上面 */
+            perspective: 500px;
+        }
+
+        ul li{
+            width: 300px;
+            height: 300px;
+            list-style: none;
+            text-align: center;
+            margin: 0 auto;
+            box-sizing: border-box;
+            border: 1px solid black;
+            padding-top: 20px;
+
+        }
+
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+
+        ul li:nth-child(1){
+            /* 默认围绕Z轴旋转 */
+            transform: rotateZ(45deg)
+        }
+
+        ul li:nth-child(2){
+            transform: rotateY(45deg);
+        }
+
+        ul li:nth-child(3){
+            transform: rotateX(45deg);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="img/rotateX.jpg" alt=""></li>
+    <li><img src="img/rotateY.jpg" alt=""></li>
+    <li><img src="img/rotateZ.jpg" alt=""></li>
+</ul>
+</body>
+</html>
