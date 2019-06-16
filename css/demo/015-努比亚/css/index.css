@@ -1,0 +1,156 @@
+/* 顶部区域 */
+.top{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+}
+
+.top .top_in{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.top .top_in .top_left{
+    float: left;
+    height: 100%;
+    width: 190px;
+}
+
+.top .top_in .top_left>h1{
+    width: 100%;
+    height: 100%;
+}
+
+.top .top_in .top_left>h1>a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: url("../images/nubia-logo.png");
+}
+
+.top .top_in .top_right{
+    float: right;
+    height: 100%;
+    width: 740px;
+}
+
+.top .top_nav{
+   float: left;
+    width: 550px;
+    height: 100%;
+}
+
+.top .top_nav>li{
+    float: left;
+}
+
+.top .top_nav>li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    line-height: 60px;
+    margin-left: 40px;
+}
+
+.top ul li a:hover{
+    color: red;
+}
+
+.top .top_login{
+   float: right;
+    width: 150px;
+    height: 100%;
+}
+
+.top .top_login>li{
+    float: right;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.top .top_login>li>a{
+    color:white;
+}
+
+.top .top_login>li:nth-child(3){
+    width: 30px;
+    height: 30px;
+    background: url("../images/nubia-syb-all.png");
+    margin-top: 15px;
+}
+
+/* 广告区域 */
+.banner{
+    height: 860px;
+    width: 100%;
+    background-color: green;
+}
+
+.banner .nav{
+    width: 1200px;
+    height: 121px;
+    background-color: red;
+    /* 绝对定位的水平居中 */
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.banner .nav>ul{
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+}
+
+.banner .nav>ul>li{
+    float: left;
+    width: 150px;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.banner .nav>ul>li img{
+    width: 120px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.banner .nav>ul>li p{
+    color: #666666;
+}
+
+.banner .nav>ul>li p span{
+    color: red;
+}
+
+.banner .figure{
+    width: 100%;
+    height: 600px;
+    background-color: pink;
+}
+
+.banner .video{
+    width: 1200px;
+    height: 250px;
+    margin: 10px auto;
+    background-color: skyblue;
+}
+
+/* 内容区域 */
+.content{
+    height: 1883px;
+    width: 100%;
+    background-color: yellow;
+}
+
+/* 底部区域 */
+.footer{
+    height: 396px;
+    width: 100%;
+    background-color: blue;
+}
