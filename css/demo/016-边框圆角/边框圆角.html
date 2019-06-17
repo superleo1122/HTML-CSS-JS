@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .father{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 100px auto;
+            border-radius: 100px 100px 100px 100px;
+        }
+
+        .son{
+            width: 100px;
+            height: 100px;
+            background-color: rgba(10,20,30,0.3);
+        }
+
+        /*
+            1.边框圆角格式：
+                (1) border-radius: 100px 0px 0px 0px;
+                (2) border-radius: 50%;   ------圆形
+            2.边框圆角绘制原理
+                先根据长宽找圆心，然后画圆
+        */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
