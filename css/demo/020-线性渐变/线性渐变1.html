@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .one{
+            width: 150px;
+            height: 100px;
+            border: 1px solid orangered;
+            box-sizing: border-box;
+            margin: 50px auto;
+            /* 从上至下渐变 */
+            background: linear-gradient(blue,yellow);
+        }
+
+        .two{
+            width: 150px;
+            height: 100px;
+            border: 1px solid orangered;
+            box-sizing: border-box;
+            margin: 50px auto;
+            /* 从左至右渐变 */
+            background: linear-gradient(to right,blue,yellow);
+        }
+
+        .three{
+            width: 150px;
+            height: 100px;
+            border: 1px solid orangered;
+            box-sizing: border-box;
+            margin: 50px auto;
+            /* 根据角度渐变 */
+            background: linear-gradient(45deg,blue,yellow);
+        }
+
+        .four{
+            width: 400px;
+            height: 100px;
+            border: 1px solid orangered;
+            box-sizing: border-box;
+            margin: 50px auto;
+            /*
+                注意点:
+                至少需要传递2个颜色, 至多没有上限
+           */
+            /*background: linear-gradient(to right, red, green, blue, yellow);*/
+            /*
+                注意点:
+                 默认情况下自动回自动计算纯色和渐变色的范围, 但是我们也可以手动指定
+                手动指定的格式: 颜色 范围
+                只有第一个颜色后面的范围是指定纯色的范围, 后面的都是指定渐变的范围
+            */
+            background: linear-gradient(to right, red 100px, green 200px, blue 300px);
+
+        }
+    </style>
+</head>
+<body>
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+</body>
+</html>
