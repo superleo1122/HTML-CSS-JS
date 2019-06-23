@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>伸缩布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 500px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            margin: 50px auto;
+            list-style: none;
+            /* 伸缩显示 */
+            display: flex;
+        }
+
+        ul>li{
+            width: 100px;
+            height: 100px;
+        }
+
+        ul>li:nth-child(1){
+            background-color: red;
+        }
+
+        ul>li:nth-child(2){
+            background-color: blue;
+        }
+
+        ul>li:nth-child(3){
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 <body>
-
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 </body>
 </html>

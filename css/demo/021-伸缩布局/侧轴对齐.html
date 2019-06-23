@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主轴</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 100px auto;
+            display: flex;
+            /* 修改主轴方向 */
+            flex-direction: row;
+            /*
+                flex-direction: row; 主轴起点的默认值
+                justify-content: flex-start; 主轴上伸缩项对齐的默认值
+                注意点: 在设置对齐方式的时候一定要理解两步操作
+                1.按照主轴起点对伸缩项进行排版
+                2.按照指定的对齐方式对齐排版好的伸缩项
+
+                justify-content: flex-start;
+                justify-content: flex-end;
+                justify-content: center;
+                justify-content: space-between;
+             */
+            justify-content: space-evenly;
+
+            /*
+                侧轴对比主轴没有两端对齐和环绕对齐
+                align-items: baseline;  让所有伸缩项中的基线在一条直线上对齐
+                stretch(拉伸对齐/等高对齐);
+
+                注意点
+                    若设置为拉伸对齐，那么伸缩项不能设置高度
+                    若伸缩项设置了高度，那么拉伸对齐就会失效
+
+                在伸缩容器中使用align-items来控制伸缩项的对齐方式，是一次性控制所有伸缩项的对齐方式，若想单独控制某一个伸缩项的对齐方式，需要将控制伸缩对齐的方式写在伸缩项中
+                    align-items     写在伸缩容器中，控制所有伸缩项
+                    align-self      写在伸缩项中，控制编写对应代码的那个伸缩项，其取值与align-items一致，只是控制范围不一样
+            */
+            align-items: stretch;
+        }
+
+        ul>li{
+            width: 100px;
+            /*height: 100px;*/
+            line-height: 100px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        ul>li:nth-child(1){
+            background-color: red;
+        }
+
+        ul>li:nth-child(2){
+            background-color: blue;
+        }
+
+        ul>li:nth-child(3){
+            background-color: yellow;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+</html>
